@@ -1,0 +1,31 @@
+.nailong {
+  width: 500px;
+  height: auto;
+  bottom: 40px;
+  left: 40px;
+  z-index: 1;
+  display: none;
+  pointer-events: none;
+  animation: nailongBounce 0.8s ease-in-out infinite alternate;
+}
+
+.nailong2 {
+  width: 500px;
+  height: auto;
+  bottom: 40px;
+  right: 40px;
+  z-index: 1;
+  display: none;
+  pointer-events: none;
+  animation: nailongBounce 0.8s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes nailongBounce {
+  from {
+    transform: translateY(0) rotate(-3deg);
+  }
+
+  to {
+    transform: translateY(-15px) rotate(3deg);
+  }
+}
